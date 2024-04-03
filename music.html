@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="music.css">
+    <script src="https://kit.fontawesome.com/5023a9d554.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="homepage">
+    Al Quran studio
+  </div>
+    <div class="container">
+        <div class="music-player">
+          <nav class="nav">
+              <div class="circle">
+               <i onclick="sidebar()" class="fa-solid fa-angle-left"></i>
+
+               <!-- <div class="option">
+                <button><i class="fa-solid fa-volume-low"></i></button>
+                <button><i class="fa-solid fa-music"></i></button>
+                <button><i class="fa-solid fa-right-from-bracket"></i></button>
+               </div> -->
+              </div>
+              <div class="circle">
+                 <i onclick="open_p()" class="fa-solid fa-bars-staggered"></i>
+              </div>
+          </nav>
+          <img src="Quran.jpg" class="quran-img">
+          <h1>Quran</h1>
+          <p>Surah Fatiah</p>
+          <audio controls id="surahs">
+               <source src="al-fatiah.mp3"type="audio/mpeg">
+          </audio>
+          <input type="range"value="0"id="progress">
+        
+        <div class="controls">
+             <div><i class="fa-solid fa-backward-fast"></i></div>
+             <div onclick="playpause()"><i class="fa-solid fa-play"id="controlicon"></i></div>
+             <div><i class="fa-solid fa-forward-fast"></i></div>
+        </div>
+        </div>
+        <div class="playlist">
+          <div class="p-songs">
+            <p id="p-title">Al-Fatiah</p>
+            <p id="p-artist">mufti menk</p>
+            <button id="active-btn"><i class="fa-solid fa-play"id="controlicon"></i></button>
+          </div>
+          <div class="p-songs">
+            <p id="p-title">Al-Baqrah</p>
+            <p id="p-artist">mufti menak</p>
+            <!-- <audio controls id="surahs">
+              <source src="baqrah.mp3"type="audio/mpeg">
+         </audio> -->
+            <button id="active-btn"><i class="fa-solid fa-play"id="controlicon"></i></button>
+          </div>
+          <div class="p-songs">
+            <p id="p-title">Al-imran</p>
+            <p id="p-artist">mufti menak</p>
+            <!-- <audio controls id="surahs">
+              <source src="imran.mp3"type="audio/mpeg">
+         </audio> -->
+            <button id="active-btn" onclick="playpause()"><i class="fa-solid fa-play"id="controlicon"></i></button>
+          </div>
+          <div class="p-songs">
+            <p id="p-title">An-Nisa</p>
+            <p id="p-artist">mufti menak</p>
+            <button id="active-btn"><i class="fa-solid fa-play"id="controlicon"></i></button>
+          </div> <div class="p-songs">
+            <p id="p-title">Al-Ma'idah</p>
+            <p id="p-artist">mufti menak</p>
+            <button id="active-btn"><i class="fa-solid fa-play"id="controlicon"></i></button>
+          </div> 
+          <div class="p-songs">
+            <p id="p-title">Al-An'am</p>
+            <p id="p-artist">mufti menak</p>
+            <button id="active-btn"><i class="fa-solid fa-play"id="controlicon"></i></button>
+          </div>
+          <div class="p-songs">
+            <p id="p-title">Al-Anfal</p>
+            <p id="p-artist">mufti menak</p>
+            <button id="active-btn"><i class="fa-solid fa-play"id="controlicon"></i></button>
+          </div><div class="p-songs">
+            <p id="p-title">Al-Taubah</p>
+            <p id="p-artist">mufti menak</p>
+            <button id="active-btn"><i class="fa-solid fa-play"id="controlicon"></i></button>
+          </div>
+          <div class="p-songs">
+            <p id="p-title">Al-A'raf</p>
+            <p id="p-artist">mufti menak</p>
+            <button id="active-btn"><i class="fa-solid fa-play"id="controlicon"></i></button>
+          </div>
+        </div>
+    </div>
+
+
+    
+    <script src="music.js"></script>
+</body>
+</html>
